@@ -1,2 +1,2 @@
 # hello-world-react
-Project for a scotch article. Written by me for all. Enjoy!!
+## https://codeburst.io/its-easy-setting-up-react-and-webpack-eb9ecaef5094

@@ -17,16 +17,21 @@ module.exports = {
             },
             {
               test: /\.scss$/,
-              use: ExtractTextPlugin.extract({
-                fallback: 'style-loader',
-                //resolve-url-loader may be chained before sass-loader if necessary
-                use: ['css-loader', 'sass-loader']
-              })
+              use: [ 'style-loader', 'css-loader', 'sass-loader' ]
             }
+              
+            // ,
+            // {
+            //   test: /\.scss$/,
+            //   use: ExtractTextPlugin.extract({
+            //     fallback: 'style-loader',
+            //     use: ['css-loader', 'sass-loader']
+            //   })
+            // }
         ]
     },
     plugins: [
-      new ExtractTextPlugin('style.css')
+     new ExtractTextPlugin({filename : '/css/main.css', disable : false})
       //if you want to pass in options, you can do so:
       //new ExtractTextPlugin({
       //  filename: 'style.css'

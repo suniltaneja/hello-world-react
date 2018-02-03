@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import './app.scss';
-
+import '../scss/app.scss';
 export class Form extends Component {
 
   constructor(props) {
@@ -15,7 +14,7 @@ export class Form extends Component {
 
   render() {
     return (
-      <div style={{textAlign: 'center'}}>
+      <div className="test" style={{textAlign: 'center'}}>
         <h1>{this.state.commaSeparated}</h1>
       </div>);
   }
